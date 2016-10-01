@@ -1,0 +1,100 @@
+div.container{ font-family: "Calibri"; }
+
+div.top{ border-bottom: solid 2px #2E8B57; padding: 0px; }
+
+div.top h1{ font-family: "American Typewriter"; margin-left: 15px; }
+div.top h1 small{ font-style: italic; font-size: 15px; }
+
+div.top-input{ margin-left: 40%; margin-right: 20px; display: inline-block; }
+div.top-search{ display: inline-block; }
+
+div.top1{ margin-top: 40px; margin-bottom: 5px; }
+
+div.sign input{ height: 25px;}
+/*div.top li.sign button{ height: 25px; }*/
+/*div.user{ margin-left: 40%; }*/
+
+div.user{ margin-left: 70%; }
+div.user span{ margin-left: 20px; }
+span.username a:link, span.username a:visited{ text-decoration: none; color: #228B22; }
+span.username a:hover, span.username a:active{ font-weight: bolder; color: #228B22; }
+span.username{ font-size: 25px; font-family: "Chalkboard"; }
+
+div.adding{ margin-top: 50px; }
+
+div.booklist{ margin-bottom: 100px; }
+
+div.booklist ul{ list-style: none; }
+div.booklist ul li{ margin-bottom: 60px; }
+div.booklist h3{ border-bottom: 1px solid #2E8B57; }
+div.booklist h3 a:link, div.booklist h3 a:visited{ color: #2E8B57; font-style: italic; font-weight: bolder; font-family: "Courier"; }
+
+span.author{ margin-left: 20px; font-style: italic; }
+
+div.user2{ margin-left: 80%; }
+
+div.whole{ margin-top: 50px; }
+
+div.reviewsec{ margin-top: 70px; margin-bottom: 100px; }
+
+div.onebook p{ overflow: hidden; text-overflow:clip; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
+
+div.authorsec{ margin-left: 150px; font-size: 13px; font-weight: bold; text-align: center; }
+/*div.authorsec form{ margin-top: 10px; }*/
+
+div.ratesec{  margin-top: 50px; }
+div.ratesec span{ font-size: 30px; font-family: "American Typewriter"; font-weight: bold; font-style: italic; text-decoration: underline; }
+div.ratesec input{ height: 25px; }
+
+div.bookinfo h2{ font-weight: bolder; /*font-style: italic;*/ font-family: "Apple Chancery"; }
+
+div.reviewlist{ border-top: 1px solid #DCDCDC; padding: 20px; }
+div.reviewlist ul{ list-style: none; }
+div.reviewlist ul li{ padding-bottom: 5px; margin-bottom: 10px; border-bottom: 1px solid #DCDCDC; }
+div.reviewlist ul li div.reviewbody{ padding: 20px; }
+div.reviewlist ul li div.foot{ font-weight: bolder; width: 100%;/* font-size: 15px;*/ font-style: italic; text-align: right;}
+
+div.sort{margin-top: 20px;/*margin-left: 10px;*/}
+
+div.top-name{ margin-left: 20%; }
+
+div.top-name span{ margin-right: 10px; }
+
+div.top-name span.user2{ font-family: "Chalkboard"; color: #228B22; }
+
+div.top-search2{ margin-left: 83%; margin-bottom: 10px;}
+
+div.left{ font-family: "Apple Chancery"; font-weight: bolder; font-style: italic; color: #2E8B57; margin-top: 20px; font-size: 20px; }
+div.left-bottom{ padding-left: 80px; padding-right: 20px; }
+div.left-top{ padding-left: 100px; }
+
+
+div.leftbar{  border-left: solid 5px #D3D3D3; }
+
+div.booksec{ margin-bottom: 100px; }
+ul.userhome li{ list-style: none; margin-bottom: 40px; }
+
+div.cont{ background-color: #F5F5F5; padding: 20px; border-radius:20px; }
+div.booksec div.cont{ padding: 20px; }
+div.commentsec div.cont{ padding: 10px; }
+
+div.booksec ul{ margin-bottom: 100px; }
+div.booksec p{ overflow: hidden; text-overflow:clip; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; margin-left: 40px; margin-top: 20px; color: #696969; }
+div.booksec h4{ border-bottom: solid 1px black; /*padding-bottom: 5px;*/ }
+p a:link, p a:visited, h4 a:link, h4 a:visited{ color: black; }
+
+div.commentsec{ margin-bottom: 100px; }
+div.commentsec ul{ margin-top: 10px; margin-bottom: 100px; }
+p a{ font-size: 18px; font-weight: bold; }
+
+div.revise{ margin-left: 90%; }
+
+div.titleedit input{ width: 70%; display: inline-block; font-weight: bold; }
+div.titleedit label{ font-size: 20px; }
+div.authoredit input{ width: 200px; display: inline-block; }
+
+div.cover{ margin-top: 85px; margin-bottom: 10px; margin-left: 35px; }
+div.cover img{ width: 180px; height: 230px; }
+/*
+
+div.commentsec */

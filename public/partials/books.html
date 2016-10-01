@@ -1,0 +1,103 @@
+<div class="top well"><!-- 
+	<a href="#/books">Back To Home</a> -->
+	<h1>BOOKS <small>Book is a gift you can open again and again</small></h1>
+	<div class="top1">
+		<div class="user" id="username">
+			<span class="username"><a href="#/user/{{user.id}}">{{user.name}}</a></span>
+			<span class="logout"><a ng-click="logout()">log out</a></span>
+		</div>
+		<div class="top-input" id="enter">
+			<form class="form-inline" role="form">
+				<div class="form-group sign">
+					<input type="text" class="form-control" placeholder="Username" ng-model="user.name" />
+					<input type="password" class="form-control" placeholder="Password" ng-model="user.pwd" />
+					<button ng-click="signin()" class="btn btn-success btn-xs">sign in</button>
+					<button ng-click="signup()" class="btn btn-success btn-xs">sign up</button>
+				</div>
+			</form>
+		</div>
+		<div class="top-search">
+			<form class="form-inline" role="form">
+				<div class="form-group">
+					<input type="text" id="query" placeholder="Search..." class="form-control" ng-model="query" />
+					<span class="glyphicon glyphicon-search"></span>
+				</div>
+			</form>
+		</div>
+
+	</div>	
+</div>
+
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-2">
+	<!-- <form role = "form" class="form-inline"> -->
+	<div class="adding">
+	<button class="btn btn-success"  data-toggle="modal" data-target="#bookform">add a book</button>
+	</div>
+
+	<div class="dropdown sort">
+		<label for="sort">Sort by: </label>
+	  	<button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown" id="sort">{{sortby}}
+	  	<span class="caret"></span></button>
+	  	<ul class="dropdown-menu" ng-model="orderProp">
+	    	<li><a ng-click="sortByDate()">Date</a></li>
+	    	<li><a ng-click="sortByTitle()">Title</a></li>
+	    	<li><a ng-click="sortByAuthor()">Author</a></li>
+	    	<li><a ng-click="sortByUser()">Post User</a></li>
+	    	<li><a ng-click="sortByRating()">Rating</a></li>
+	  	</ul>
+	</div>
+	<!-- </form> -->
+
+	<div class="modal fade" id="bookform" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Add a book</h4>
+				</div>
+				<div class="modal-body">
+					<form id="form1" role="form">
+						<div class="form-group">
+							<input type="text" class="form-control" ng-model="book.title" autofocus="autofocus" placeholder="Title" />
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" ng-model="book.description" rows="20" placeholder="Brief introduction..."></textarea>
+						</div>
+					</form>
+					<form id="form2" class="form-inline" role="form">
+						<div class="form-group">
+							<label for="author">Author:</label>
+							<input type="text" class="form-control" id="author" ng-model="book.author" />
+						</div>
+						<div class="form-group">
+							<label for="rate">Rate:</label>
+							<input type="number" min="1" class="form-control" max="5" step="0.1" value="3" ng-model="book.rating">/5
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" ng-click="addBook()" data-dismiss="modal">Submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="booklist col-md-8">
+	<ul>
+		<li ng-repeat="book in booklist | filter: query | orderBy:orderProp">
+			<div class="onebook">
+				<h3><a href="#/book/{{book._id}}">{{book.title}}</a>
+				<small><span class="badge">{{book.rating}}</span><span class="author">{{book.author}}</span></small></h3>		
+				<blockquote>
+					<p>{{book.description}}</p>
+					<footer>Posted by {{book.post}} {{book.date}}</footer>
+				</blockquote>
+			</div>
+		</li>
+	</ul>
+</div>
+</div>
